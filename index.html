@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test task</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="script.js"></script>
+</head>
+<body style="background-color: #eeeeee">
+  <nav class = "navbar navbar-inverse">
+    <h1 style="text-align: center; color: darkgray">Тестовое задание для стажировки в Транзас</h1>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="text-center col-sm-12 col-md-2 col-lg-2 col-xl-2"></div>
+      <div class="text-center col-sm-12 col-md-8 col-lg-8 col-xl-8" style="margin-left: auto; border-radius: 20px; background-color: #dddddd">
+        <h2 style="text-align: center">Условие задания «Выплата монетами»</h2>
+        <p>
+          Требуется выплатить сумму S монетами достоинством A и B, причём если сумма S может быть разложена на целое количество монет
+          достоинств A и B, то остаток должен быть равен нулю, а если сумма S не может быть разложена на целое количество монет достоинств A и B,
+          то остаток должен быть меньше достоинства самой дешёвой монеты. Это основное условие с наивысшим приоритетом. <br><br>
+
+          <strong>Например:</strong><br>
+          При S=6, A=5, B=1 получаем: 6 руб. = 1 x 5 руб. + 1 x 1 руб.<br>
+          При S=6, A=5, B=2 результатом будет: 6 руб. = 0 х 5 руб. + 3 х 2 руб.<br>
+          При S=3, A=5, B=2 результатом будет: 3 руб. = 0 х 5 руб. + 1 х 2 руб. + остаток 1 руб.<br>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row"  style="margin-top: 10px">
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+          <input class="form-control" type="text" id="sum" placeholder="Summa" style="margin-top: 7px; margin-bottom: 7px;">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <input class="form-control" type="text" id="firstPrice" placeholder="1st worth" style="margin-top: 7px; margin-bottom: 7px;">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <input class="form-control" type="text" id="secPrice" placeholder="2nd worth" style="margin-top: 7px; margin-bottom: 7px;">
+      </div>
+
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <input class="form-control" type="text" id="percent" placeholder="Percent of highest coins" style="margin-top: 7px; margin-bottom: 7px;">
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 10px;">
+    <button type="button" class="btn btn-inverse btn-lg" onclick="Solve();" style="height: 40px; text-align: center;">Solve</button>
+  </div>
+  <<footer class="footer" style="margin-top: 230px;">
+    <div class="container text-center">
+      <div class="row">
+        <span class="text-muted glyphicon glyphicon-copyright-mark"> Николай Реутов</span>
+      </div>
+      <div class="row" style="margin-top: 10px">
+        <span class="text-muted glyphicon glyphicon-envelope"> nicolre239@gmail.com</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
